@@ -32,7 +32,7 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = false
  
-  host = 'infinite-reef-97583.herokuapp.com'
+  host = 'twitter-clone-sample.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
     ActionMailer::Base.smtp_settings = {
     :address => 'smtp.sendgrid.net',
