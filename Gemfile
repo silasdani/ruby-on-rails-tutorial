@@ -6,7 +6,13 @@ ruby '2.7.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 
+gem 'mini_magick', '4.9.5'
+
+gem 'image_processing', '1.9.3'
+
 gem 'bcrypt', '3.1.13'
+
+gem 'active_storage_validations', '0.8.2'
 
 gem 'faker', '2.1.2'
 
@@ -68,7 +74,8 @@ gem 'guard-minitest', '2.4.6'
 end
 
 group :production do
-gem 'pg', '1.1.4'
+  gem 'pg', '1.1.4'
+  gem 'aws-sdk-s3', '1.46.0', require: false
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
